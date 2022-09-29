@@ -1,0 +1,17 @@
+
+
+{% extends 'base.html' %}
+
+
+{% block content %}
+ <div class="app">
+ <div class="date">
+ {% for appguztiak in appguztik %}
+ <p>{{ appguztik }}</p>
+{% endfor %}
+ </div>
+ <br/>
+ <h1>{{ appguztik.izena }}</h1>
+ <p>{{ appguztik.text|safe|linebreaksbr }}</p>
+ </div>
+{% endblock content %}
